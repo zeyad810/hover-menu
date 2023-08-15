@@ -1,0 +1,85 @@
+body{
+    background-color: gray;
+}
+.page{
+    display: flex;
+    justify-content: flex-end;
+    width: 85%;
+    margin: auto;
+    padding: 10px 5px;
+
+}
+.header .links{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 10px;
+    transition: 0.4s;
+}
+.header .links:hover .icon span:nth-child(2){
+    width: 100%;
+}
+.header .links:hover .icon span:nth-child(1){
+    width: 60%;
+}
+.header .links:hover .icon span:nth-child(3){
+    width: 60%;
+}
+.header .links .icon{
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    transition: 0.4s;
+}
+.header .links:hover ul{
+    display: inline-block;
+    transition: 0.4s;
+}
+
+.header .links .icon span{
+    background-color: black;
+    margin-bottom: 5px;
+}
+.header .links .icon span:nth-child(1){
+    width: 100%;
+    transition: 0.3s;
+
+    height: 2px;
+}
+.header .links .icon span:nth-child(2){
+    width: 60%;
+    height: 2px;
+    transition: 0.3s;
+}
+.header .links .icon span:nth-child(3){
+    width: 100%;
+    transition: 0.3s;
+    height: 2.5px;
+}
+.header .links ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: cornflowerblue;
+    width: 250px    ;
+    border-radius: 10px;
+    display: none;
+}
+.header .links ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 2px solid white;
+    text-transform: uppercase;
+    color: white;
+}
+#last{
+    border-bottom: none;
+}
